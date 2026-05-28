@@ -6,3 +6,6 @@ String str = "Happy Coidng";
             rev = rev + str.charAt(i);
         }
         System.out.println("Reverse String is:" + rev);
+
+## Palindrome 
+
