@@ -1,5 +1,5 @@
 # Java_Programms
-## Reverse a String
+## 1. Reverse a String
         String str = "Happy Coidng";
         String rev = " ";
         for (int i = str.length()-1; i >=0; i--){
@@ -7,7 +7,7 @@
         }
         System.out.println("Reverse String is:" + rev);
 
-## Palindrome 
+## 2. Palindrome 
         String str = "cac";
          String rev = "";
         for (int i = str.length()-1; i >=0; i--){
@@ -21,7 +21,7 @@
             System.out.println("Not a Palindrome");
         }
 
-## Swap two numbers
+## 3. Swap two numbers
          int a  = 10;
          int b = 20;
         int temp;
@@ -30,7 +30,7 @@
         b = temp;
             System.out.println(a + " " + b);
         }
-## Even and Odd Number
+## 4. Even and Odd Number
           int num = 10;
                if(num % 2 == 0){
                    System.out.println("Even number");
@@ -38,7 +38,7 @@
             System.out.println("Odd number");
                }
         
-## Prime Number Check
+## 5. Prime Number Check
         int num = 29;
         boolean prime = true;
         for(int i = 2; i < num; i++){
@@ -52,7 +52,7 @@
         }else{
             System.out.println("Not a Prime Number");
         }
-## Right traingle Pattern (*******)
+## 6. Right traingle Pattern (*******)
         int rows = 5;
         for(int i = 1; i <= rows; i++){
             for (int j = 1; j <= i; j++){
@@ -60,7 +60,7 @@
             }
             System.out.println();
         }
-## Right Aligned Triangle (Left triangle)
+## 7. Right Aligned Triangle (Left triangle)
             int rows = 5;
         for(int i = 1; i <= rows; i++){
             for(int j = i; j < rows; j++){
@@ -72,7 +72,7 @@
             System.out.println();
         }
  
-## Right traingle (Number Pattern)
+## 8. Right traingle (Number Pattern)
          int rows = 5;
         for(int i = 1; i <= rows; i++){
             for(int j = 1; j<=i; j++){
@@ -81,7 +81,7 @@
             System.out.println();
         }
 
-## Right Aligned Triangle(Number Pattern)
+## 9. Right Aligned Triangle(Number Pattern)
         int rows = 5;
         for(int i = 1; i <= rows; i++){
             for(int j = i; j<rows; j++){
@@ -93,7 +93,7 @@
             System.out.println();
         }
 
-## Inverted Right Triangle (Reverse)
+## 10. Inverted Right Triangle (Reverse)
        int rows = 5;
         for(int i = rows; i >= 1; i--){
             for(int j = 1; j <= i; j++){
@@ -102,7 +102,7 @@
             System.out.println();
         }
 
-## Reverse Right Triangle(Number)
+## 11. Reverse Right Triangle(Number)
             int rows = 5;
         for(int i = rows; i >= 1; i--){
             for(int j = 1; j <= i; j++){
@@ -111,7 +111,7 @@
             System.out.println();
         }
 
-## Inverted Right Aligned Traingle
+## 12. Inverted Right Aligned Traingle
            int rows = 5;
         for(int i = rows; i>=1; i--){
             for(int j = i; j < rows; j++){
@@ -123,7 +123,7 @@
             System.out.println();
         }
 
-## Inverted Right Aligned triangle (Number Pattern)
+## 13. Inverted Right Aligned triangle (Number Pattern)
             int rows = 5;
         for(int i = rows; i>=1; i--){
             for(int j = i; j < rows; j++){
