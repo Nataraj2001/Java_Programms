@@ -134,5 +134,176 @@
             }
             System.out.println();
         }
-    
 
+## 14. Decimal to Binary
+        public class BinaryRepresentation {
+            public static void main(String[] args) {
+
+                int num    = 29;
+                String binary = Integer.toBinaryString(num);  // Convert to binary
+                int zeros  = 0;
+                int ones   = 0;
+
+                for (char c : binary.toCharArray()) {
+                    if (c == '0') zeros++;
+                    else          ones++;
+                }
+
+                System.out.println("Number      : " + num);
+                System.out.println("Binary      : " + binary);
+                System.out.println("Count of 0s : " + zeros);
+                System.out.println("Count of 1s : " + ones);
+            }
+        }
+
+## 15. Binary to Decimal
+        public class BinaryToDecimal {
+            public static void main(String[] args) {
+
+                String binary  = "11101";
+                int decimal    = Integer.parseInt(binary, 2);  // Convert binary to decimal
+                System.out.println("Binary  : " + binary);
+                System.out.println("Decimal : " + decimal);
+            }
+        }
+
+## 16.Decimal to Octal
+        public class DecimalToOctal {
+            public static void main(String[] args) {
+
+                int num      = 29;
+                int n        = num;
+                String octal = "";
+
+                while (n > 0) {
+                    octal = (n % 8) + octal;   // Get remainder and prepend
+                    n    /= 8;
+                }
+
+                System.out.println("Decimal : " + num);
+                System.out.println("Octal   : " + octal);
+            }
+        }
+
+## 17. Octal to Decimal
+        import java.util.Scanner;
+        public class OctalToDecimal {
+            public static void main(String[] args) {
+
+                Scanner sc   = new Scanner(System.in);
+                System.out.print("Enter an octal number: ");
+                String octal = sc.next();
+                int decimal  = Integer.parseInt(octal, 8);
+
+                System.out.println("Octal   : " + octal);
+                System.out.println("Decimal : " + decimal);
+                sc.close();
+            }
+        }
+
+## 18. Decimal to HexaDecimal
+        public class DecimalToHexadecimal {
+            public static void main(String[] args) {
+                int num         = 255;
+                String hex      = Integer.toHexString(num).toUpperCase();  // Convert to hex
+                System.out.println("Decimal     : " + num);
+                System.out.println("Hexadecimal : " + hex);
+            }
+        }
+
+## 19. HexaDecimal to Decimal
+        public class HexadecimalToDecimal {
+            public static void main(String[] args) {
+                String hex  = "FF";
+                int decimal = Integer.parseInt(hex, 16);  // Convert hex to decimal
+                System.out.println("Hexadecimal : " + hex);
+                System.out.println("Decimal     : " + decimal);
+                }
+        }
+## 20. Binary to Octal
+        public class BinaryToOctal {
+            public static void main(String[] args) {
+
+                String binary = "11101";
+                String octal  = Integer.toOctalString(Integer.parseInt(binary, 2));  
+                System.out.println("Binary : " + binary);
+                System.out.println("Octal  : " + octal);
+            }
+        }
+
+## 21 .Octal to Binary
+        public class OctalToBinary {
+            public static void main(String[] args) {
+                String octal  = "35";
+                String binary = Integer.toBinaryString(Integer.parseInt(octal, 8)); 
+                System.out.println("Octal  : " + octal);
+                System.out.println("Binary : " + binary);
+            }
+        }
+
+## 22 .Binary to HexaDecimal
+        public class BinaryToHexadecimal {
+            public static void main(String[] args) {
+
+                String binary = "11101";
+                String hex    = Integer.toHexString(Integer.parseInt(binary,                         2)).toUpperCase();  // Convert binary to hex
+
+                System.out.println("Binary      : " + binary);
+                System.out.println("Hexadecimal : " + hex);
+                }
+        }
+## 23. Hexadecimal to Binary
+        import java.util.Scanner;
+        public class HexToBinary {
+                public static void main(String[] args) {
+                        Scanner sc = new Scanner(System.in);
+
+                        System.out.print("Enter a hexadecimal number: ");
+                        String hex = sc.nextLine();
+
+                        int decimal = Integer.parseInt(hex, 16);
+                        String binary = Integer.toBinaryString(decimal);
+
+                        System.out.println("Binary equivalent: " + binary);
+
+                        sc.close();
+                        }
+                }
+
+## 24. Octal to Hexadecimal 
+        import java.util.Scanner;
+
+        public class OctalToHexadecimal {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.print("Enter an octal number: ");
+                String octal = sc.nextLine();
+
+                int decimal = Integer.parseInt(octal, 8);
+                String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+
+                 System.out.println("Hexadecimal equivalent: " + hexadecimal);
+
+                sc.close();
+                }
+        }
+
+## 25. Hexadecimal to Octal
+        import java.util.Scanner;
+
+        public class HexToOctal {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.print("Enter a hexadecimal number: ");
+                String hex = sc.nextLine();
+
+                int decimal = Integer.parseInt(hex, 16);
+                String octal = Integer.toOctalString(decimal);
+
+                System.out.println("Octal equivalent: " + octal);
+
+                sc.close();
+            }
+        }
